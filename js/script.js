@@ -16,6 +16,11 @@ createApp({
          })
       }
    }
-  }
+
+  },
+
+   created(){
+   this.getRandomMail()
+   }  
 
 }).mount('#app')
