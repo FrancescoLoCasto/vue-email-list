@@ -29,16 +29,18 @@
                </div>
 
                <div class="row">
-                  <div class="col-12 text-center ">
-                     <ul class="style-n">
-                        <li class="p-2"  v-for="email, index in mail">
-                           <span class="font-monospace " v-if="(mail.length === 10)">
+                  <div class="col-12 text-center">
+                     <ul class="style-n" v-for="email, index in mail">
+
+                        <li class="p-2" v-if="(mail.length === 10)"  >
+                           <span class="font-monospace " >
                               {{ email }}
                            </span>
                         </li>
-
-
-
+                        
+                        <p v-else>
+                           Sto generando le tue mail
+                        </p>
                      </ul>
                   </div>
                </div>
