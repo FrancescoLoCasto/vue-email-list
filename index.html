@@ -31,14 +31,14 @@
                <div class="row">
                   <div class="col-12">
                      <ul>
-                        <li  v-for="email, index in mail"></li>
-                        <p v-if="(mail.length === 10)">
-                           {{ mail }}
-                        </p>
+                        <li  v-for="email, index in mail">
+                           <p v-if="(mail.length === 10)">
+                              {{ mail }}
+                           </p>
+                        </li>
 
-                        <p v-else>
-                           Sto generando le tue Mail.
-                        </p>
+
+
                      </ul>
                   </div>
                </div>
